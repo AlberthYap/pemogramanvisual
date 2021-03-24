@@ -1,0 +1,7 @@
+D:\Materi\Semester VI\Pemograman Visual\Sol_Latihan1\Latihan1\obj\Debug\Latihan1.csprojAssemblyReference.cache
+D:\Materi\Semester VI\Pemograman Visual\Sol_Latihan1\Latihan1\obj\Debug\Latihan1.csproj.CoreCompileInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\Sol_Latihan1\Latihan1\bin\Debug\Latihan1.exe.config
+D:\Materi\Semester VI\Pemograman Visual\Sol_Latihan1\Latihan1\bin\Debug\Latihan1.exe
+D:\Materi\Semester VI\Pemograman Visual\Sol_Latihan1\Latihan1\bin\Debug\Latihan1.pdb
+D:\Materi\Semester VI\Pemograman Visual\Sol_Latihan1\Latihan1\obj\Debug\Latihan1.exe
+D:\Materi\Semester VI\Pemograman Visual\Sol_Latihan1\Latihan1\obj\Debug\Latihan1.pdb

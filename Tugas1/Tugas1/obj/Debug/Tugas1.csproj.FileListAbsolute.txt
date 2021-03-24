@@ -1,0 +1,10 @@
+D:\Materi\Semester VI\Pemograman Visual\Code\Tugas1\Tugas1\bin\Debug\Tugas1.exe.config
+D:\Materi\Semester VI\Pemograman Visual\Code\Tugas1\Tugas1\bin\Debug\Tugas1.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\Tugas1\Tugas1\bin\Debug\Tugas1.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\Tugas1\Tugas1\obj\Debug\Tugas1.csprojAssemblyReference.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\Tugas1\Tugas1\obj\Debug\Tugas1.Form1.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\Tugas1\Tugas1\obj\Debug\Tugas1.Properties.Resources.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\Tugas1\Tugas1\obj\Debug\Tugas1.csproj.GenerateResource.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\Tugas1\Tugas1\obj\Debug\Tugas1.csproj.CoreCompileInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\Tugas1\Tugas1\obj\Debug\Tugas1.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\Tugas1\Tugas1\obj\Debug\Tugas1.pdb

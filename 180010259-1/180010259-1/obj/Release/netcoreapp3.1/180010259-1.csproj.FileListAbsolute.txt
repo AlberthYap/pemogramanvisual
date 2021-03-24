@@ -1,0 +1,16 @@
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\bin\Release\netcoreapp3.1\180010259-1.exe
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\bin\Release\netcoreapp3.1\180010259-1.deps.json
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\bin\Release\netcoreapp3.1\180010259-1.runtimeconfig.json
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\bin\Release\netcoreapp3.1\180010259-1.runtimeconfig.dev.json
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\bin\Release\netcoreapp3.1\180010259-1.dll
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\bin\Release\netcoreapp3.1\180010259-1.pdb
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\obj\Release\netcoreapp3.1\_180010259_1.Form1.resources
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\obj\Release\netcoreapp3.1\_180010259_1.Form2.resources
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\obj\Release\netcoreapp3.1\_180010259_1.Form3.resources
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\obj\Release\netcoreapp3.1\180010259-1.csproj.GenerateResource.cache
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\obj\Release\netcoreapp3.1\180010259-1.AssemblyInfoInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\obj\Release\netcoreapp3.1\180010259-1.AssemblyInfo.cs
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\obj\Release\netcoreapp3.1\180010259-1.csproj.CoreCompileInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\obj\Release\netcoreapp3.1\180010259-1.dll
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\obj\Release\netcoreapp3.1\180010259-1.pdb
+D:\Materi\Semester VI\Pemograman Visual\180010259-1\180010259-1\obj\Release\netcoreapp3.1\180010259-1.genruntimeconfig.cache
