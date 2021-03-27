@@ -96,7 +96,7 @@ namespace Tugas1
             this.listBox3.FormattingEnabled = true;
             this.listBox3.Location = new System.Drawing.Point(385, 35);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(120, 212);
+            this.listBox3.Size = new System.Drawing.Size(132, 212);
             this.listBox3.TabIndex = 7;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
@@ -122,6 +122,7 @@ namespace Tugas1
             this.cmbPilih.Size = new System.Drawing.Size(121, 21);
             this.cmbPilih.TabIndex = 9;
             this.cmbPilih.Text = "Silahkan Pilih";
+            this.cmbPilih.SelectedIndexChanged += new System.EventHandler(this.cmbPilih_SelectedIndexChanged);
             // 
             // lblHasil
             // 
@@ -138,7 +139,7 @@ namespace Tugas1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 344);
+            this.ClientSize = new System.Drawing.Size(528, 344);
             this.Controls.Add(this.lblHasil);
             this.Controls.Add(this.cmbPilih);
             this.Controls.Add(this.btnProses);
@@ -150,7 +151,7 @@ namespace Tugas1
             this.Controls.Add(this.btnInput2);
             this.Controls.Add(this.btninput1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "E-Class1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

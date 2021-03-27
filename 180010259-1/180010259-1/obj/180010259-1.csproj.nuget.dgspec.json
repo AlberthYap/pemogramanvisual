@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Materi\\Semester VI\\Pemograman Visual\\180010259-1\\180010259-1\\180010259-1.csproj": {}
+    "D:\\Materi\\Semester VI\\Pemograman Visual\\Code\\180010259-1\\180010259-1\\180010259-1.csproj": {}
   },
   "projects": {
-    "D:\\Materi\\Semester VI\\Pemograman Visual\\180010259-1\\180010259-1\\180010259-1.csproj": {
+    "D:\\Materi\\Semester VI\\Pemograman Visual\\Code\\180010259-1\\180010259-1\\180010259-1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Materi\\Semester VI\\Pemograman Visual\\180010259-1\\180010259-1\\180010259-1.csproj",
+        "projectUniqueName": "D:\\Materi\\Semester VI\\Pemograman Visual\\Code\\180010259-1\\180010259-1\\180010259-1.csproj",
         "projectName": "180010259-1",
-        "projectPath": "D:\\Materi\\Semester VI\\Pemograman Visual\\180010259-1\\180010259-1\\180010259-1.csproj",
+        "projectPath": "D:\\Materi\\Semester VI\\Pemograman Visual\\Code\\180010259-1\\180010259-1\\180010259-1.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\Materi\\Semester VI\\Pemograman Visual\\180010259-1\\180010259-1\\obj\\",
+        "outputPath": "D:\\Materi\\Semester VI\\Pemograman Visual\\Code\\180010259-1\\180010259-1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
