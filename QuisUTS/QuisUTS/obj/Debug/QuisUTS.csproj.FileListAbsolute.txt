@@ -1,0 +1,10 @@
+D:\Materi\Semester VI\Pemograman Visual\Code\QuisUTS\QuisUTS\bin\Debug\QuisUTS.exe.config
+D:\Materi\Semester VI\Pemograman Visual\Code\QuisUTS\QuisUTS\bin\Debug\QuisUTS.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\QuisUTS\QuisUTS\bin\Debug\QuisUTS.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\QuisUTS\QuisUTS\obj\Debug\QuisUTS.csprojAssemblyReference.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\QuisUTS\QuisUTS\obj\Debug\QuisUTS.Form1.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\QuisUTS\QuisUTS\obj\Debug\QuisUTS.Properties.Resources.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\QuisUTS\QuisUTS\obj\Debug\QuisUTS.csproj.GenerateResource.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\QuisUTS\QuisUTS\obj\Debug\QuisUTS.csproj.CoreCompileInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\QuisUTS\QuisUTS\obj\Debug\QuisUTS.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\QuisUTS\QuisUTS\obj\Debug\QuisUTS.pdb
