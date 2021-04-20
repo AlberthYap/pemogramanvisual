@@ -1,0 +1,10 @@
+D:\Materi\Semester VI\Pemograman Visual\Code\UTS-180010259\UTS-180010259\obj\Debug\UTS-180010259.csprojAssemblyReference.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\UTS-180010259\UTS-180010259\obj\Debug\UTS_180010259.Biasa.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\UTS-180010259\UTS-180010259\obj\Debug\UTS_180010259.Properties.Resources.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\UTS-180010259\UTS-180010259\obj\Debug\UTS-180010259.csproj.GenerateResource.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\UTS-180010259\UTS-180010259\obj\Debug\UTS-180010259.csproj.CoreCompileInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\UTS-180010259\UTS-180010259\bin\Debug\UTS-180010259.exe.config
+D:\Materi\Semester VI\Pemograman Visual\Code\UTS-180010259\UTS-180010259\bin\Debug\UTS-180010259.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\UTS-180010259\UTS-180010259\bin\Debug\UTS-180010259.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\UTS-180010259\UTS-180010259\obj\Debug\UTS-180010259.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\UTS-180010259\UTS-180010259\obj\Debug\UTS-180010259.pdb

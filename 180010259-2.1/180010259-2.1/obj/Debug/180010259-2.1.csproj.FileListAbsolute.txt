@@ -1,0 +1,10 @@
+D:\Materi\Semester VI\Pemograman Visual\Code\180010259-2.1\180010259-2.1\bin\Debug\180010259-2.1.exe.config
+D:\Materi\Semester VI\Pemograman Visual\Code\180010259-2.1\180010259-2.1\bin\Debug\180010259-2.1.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\180010259-2.1\180010259-2.1\bin\Debug\180010259-2.1.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\180010259-2.1\180010259-2.1\obj\Debug\180010259-2.1.csprojAssemblyReference.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\180010259-2.1\180010259-2.1\obj\Debug\_180010259_2._1.form1.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\180010259-2.1\180010259-2.1\obj\Debug\_180010259_2._1.Properties.Resources.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\180010259-2.1\180010259-2.1\obj\Debug\180010259-2.1.csproj.GenerateResource.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\180010259-2.1\180010259-2.1\obj\Debug\180010259-2.1.csproj.CoreCompileInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\180010259-2.1\180010259-2.1\obj\Debug\180010259-2.1.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\180010259-2.1\180010259-2.1\obj\Debug\180010259-2.1.pdb

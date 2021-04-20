@@ -1,0 +1,13 @@
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\bin\Debug\Dialog1.exe.config
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\bin\Debug\Dialog1.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\bin\Debug\Dialog1.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\obj\Debug\Dialog1.csprojAssemblyReference.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\obj\Debug\Dialog1.frmOpenFileDialog.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\obj\Debug\Dialog1.Properties.Resources.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\obj\Debug\Dialog1.csproj.GenerateResource.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\obj\Debug\Dialog1.csproj.CoreCompileInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\obj\Debug\Dialog1.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\obj\Debug\Dialog1.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\obj\Debug\Dialog1.frmSaveFileDialog.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\obj\Debug\Dialog1.frmColorDialog.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\Dialog1\Dialog1\obj\Debug\Dialog1.frmFontDialog.resources
