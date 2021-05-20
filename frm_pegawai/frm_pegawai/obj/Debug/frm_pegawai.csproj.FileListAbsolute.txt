@@ -1,0 +1,11 @@
+D:\Materi\Semester VI\Pemograman Visual\Code\frm_pegawai\frm_pegawai\bin\Debug\frm_pegawai.exe.config
+D:\Materi\Semester VI\Pemograman Visual\Code\frm_pegawai\frm_pegawai\bin\Debug\frm_pegawai.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\frm_pegawai\frm_pegawai\bin\Debug\frm_pegawai.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\frm_pegawai\frm_pegawai\obj\Debug\frm_pegawai.csprojAssemblyReference.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\frm_pegawai\frm_pegawai\obj\Debug\frm_pegawai.Form1.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\frm_pegawai\frm_pegawai\obj\Debug\frm_pegawai.Form2.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\frm_pegawai\frm_pegawai\obj\Debug\frm_pegawai.Properties.Resources.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\frm_pegawai\frm_pegawai\obj\Debug\frm_pegawai.csproj.GenerateResource.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\frm_pegawai\frm_pegawai\obj\Debug\frm_pegawai.csproj.CoreCompileInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\frm_pegawai\frm_pegawai\obj\Debug\frm_pegawai.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\frm_pegawai\frm_pegawai\obj\Debug\frm_pegawai.pdb

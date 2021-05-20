@@ -1,0 +1,107 @@
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form2.resources
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form3.resources
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form4.resources
+D:\Meng\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.frmMGrade.resources
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form2.resources
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form3.resources
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form4.resources
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.frmMGrade.resources
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+F:\Mater_elearning\SI9309_20171222092601\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+F:\Mater_elearning\SI9309_20171222092601\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+F:\Mater_elearning\SI9309_20171222092601\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+D:\KULIAH\Visual I\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form6.resources
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\mscorlib.dll
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\normidna.nlp
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\normnfc.nlp
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\normnfd.nlp
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\normnfkc.nlp
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\normnfkd.nlp
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form2.resources
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form3.resources
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form4.resources
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.frmMGrade.resources
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form6.resources
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+D:\MENG\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form7.resources
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\mscorlib.dll
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\normidna.nlp
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\normnfc.nlp
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\normnfd.nlp
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\normnfkc.nlp
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\normnfkd.nlp
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form2.resources
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form3.resources
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form4.resources
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.frmMGrade.resources
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form6.resources
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form7.resources
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form8.resources
+D:\Meng\PV CB163\Materi\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form9.resources
+C:\KULIAH\SK9309_20191204170841\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+C:\KULIAH\SK9309_20191204170841\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+C:\KULIAH\SK9309_20191204170841\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form2.resources
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form3.resources
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form4.resources
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.frmMGrade.resources
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form6.resources
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form7.resources
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form8.resources
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form9.resources
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+D:\KULIAH\Visual\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojAssemblyReference.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form3.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form4.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form6.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form9.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.CoreCompileInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb

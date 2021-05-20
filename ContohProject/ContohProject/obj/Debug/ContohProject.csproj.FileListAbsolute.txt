@@ -1,0 +1,11 @@
+D:\Materi\Semester VI\Pemograman Visual\Code\ContohProject\ContohProject\obj\Debug\ContohProject.csprojAssemblyReference.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\ContohProject\ContohProject\obj\Debug\ContohProject.Form1.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\ContohProject\ContohProject\obj\Debug\ContohProject.FormPegawai.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\ContohProject\ContohProject\obj\Debug\ContohProject.Properties.Resources.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\ContohProject\ContohProject\obj\Debug\ContohProject.csproj.GenerateResource.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\ContohProject\ContohProject\obj\Debug\ContohProject.csproj.CoreCompileInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\ContohProject\ContohProject\bin\Debug\ContohProject.exe.config
+D:\Materi\Semester VI\Pemograman Visual\Code\ContohProject\ContohProject\bin\Debug\ContohProject.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\ContohProject\ContohProject\bin\Debug\ContohProject.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\ContohProject\ContohProject\obj\Debug\ContohProject.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\ContohProject\ContohProject\obj\Debug\ContohProject.pdb
