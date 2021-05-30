@@ -1,0 +1,11 @@
+D:\Materi\Semester VI\Pemograman Visual\Code\UAS-180010259-BENGKEL\UAS-180010259-BENGKEL\bin\Debug\UAS-180010259-BENGKEL.exe.config
+D:\Materi\Semester VI\Pemograman Visual\Code\UAS-180010259-BENGKEL\UAS-180010259-BENGKEL\bin\Debug\UAS-180010259-BENGKEL.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\UAS-180010259-BENGKEL\UAS-180010259-BENGKEL\bin\Debug\UAS-180010259-BENGKEL.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\UAS-180010259-BENGKEL\UAS-180010259-BENGKEL\obj\Debug\UAS-180010259-BENGKEL.csprojAssemblyReference.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\UAS-180010259-BENGKEL\UAS-180010259-BENGKEL\obj\Debug\UAS_180010259_BENGKEL.Form1.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\UAS-180010259-BENGKEL\UAS-180010259-BENGKEL\obj\Debug\UAS_180010259_BENGKEL.Properties.Resources.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\UAS-180010259-BENGKEL\UAS-180010259-BENGKEL\obj\Debug\UAS-180010259-BENGKEL.csproj.GenerateResource.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\UAS-180010259-BENGKEL\UAS-180010259-BENGKEL\obj\Debug\UAS-180010259-BENGKEL.csproj.CoreCompileInputs.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\UAS-180010259-BENGKEL\UAS-180010259-BENGKEL\obj\Debug\UAS-180010259-BENGKEL.exe
+D:\Materi\Semester VI\Pemograman Visual\Code\UAS-180010259-BENGKEL\UAS-180010259-BENGKEL\obj\Debug\UAS-180010259-BENGKEL.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\UAS-180010259-BENGKEL\UAS-180010259-BENGKEL\obj\Debug\UAS_180010259_BENGKEL.DaftarItem.resources

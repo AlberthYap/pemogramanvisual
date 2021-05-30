@@ -32,5 +32,10 @@ namespace WindowsFormsApplication6
         {
 
         }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

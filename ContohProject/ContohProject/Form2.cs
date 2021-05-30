@@ -136,5 +136,10 @@ namespace ContohProject
             rdr.Close();
             conn.Close();
         }
+
+        private void btnKeluar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

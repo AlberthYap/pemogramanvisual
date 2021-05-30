@@ -179,16 +179,23 @@ namespace WindowsFormsApplication6
                     //Delete data di tabel transaksi2 berdasarkan Kode trs
                     //insert data di tabel transaksi2
 
+                    
+
                     int n = lsvBarang.Items.Count - 1;
                     for (int i = 0; i <= n; i++)
                     {
-                        ssql = "UPDATE transaksi2 " +
-                               "SET kd_trs = '" + txtKodeTrs.Text + "'," +
-                               "kd_brg = '" + lsvBarang.Items[i].SubItems[0].Text + "'," +
-                               "Harga = " + lsvBarang.Items[i].SubItems[2].Text + "," +
-                               "Qty = " + lsvBarang.Items[i].SubItems[3].Text + "," +
-                               "sub_total = " + lsvBarang.Items[i].SubItems[4].Text +
-                               "WHERE kd_trs = '" + txtKodeTrs + "'";
+                        ssql = "DELETE FROM TRANSAKSI2 WHERE kd_trs = " + txtKodeTrs + "";
+
+                        cmd = new SqlCommand(ssql, conn);
+                        cmd.ExecuteNonQuery();
+
+                        ssql = "INSERT INTO transaksi2 " +
+                               "VALUES('" + txtKodeTrs.Text + "','" +
+                               lsvBarang.Items[i].SubItems[0].Text + "'," +
+                               lsvBarang.Items[i].SubItems[2].Text + "," +
+                               lsvBarang.Items[i].SubItems[3].Text + "," +
+                               lsvBarang.Items[i].SubItems[4].Text + ")";
+
                         cmd = new SqlCommand(ssql, conn);
                         cmd.ExecuteNonQuery();
 
@@ -197,7 +204,7 @@ namespace WindowsFormsApplication6
                 }
                 else
                 {
-                    AutoNumber();
+                     AutoNumber();
                     txtKodeTrs.Text = KodeAuto;
                     ssql = "INSERT INTO transaksi " +
                         "VALUES('" + txtKodeTrs.Text + "','" + dtpTglTrs.Value.Date.ToString("MM-dd-yyyy") + "'," + txtTotal.Text + "," + txtBayar.Text + "," + txtKembali.Text + ")";
@@ -299,6 +306,11 @@ namespace WindowsFormsApplication6
             //delete from transaksi1 where kd_trs = txtKodeTrs.Text
 
             //delete from transaksi2 where kd_trs = txtKodeTrs.Text
+
+        }
+
+        private void lsvBarang_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

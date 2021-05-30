@@ -16,5 +16,11 @@ namespace UAS_180010259_BENGKEL
         {
             InitializeComponent();
         }
+
+        private void stockMasukToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form DaftarItem = new DaftarItem();
+            DaftarItem.Show();
+        }
     }
 }
