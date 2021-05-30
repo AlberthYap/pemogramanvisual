@@ -18,3 +18,4 @@ D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.p
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.penjualan.resources
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.RiwayatPenjualan.resources
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.ItemAll.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.listPengunjung.resources

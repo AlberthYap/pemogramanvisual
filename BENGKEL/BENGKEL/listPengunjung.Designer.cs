@@ -1,7 +1,7 @@
 ﻿
 namespace BENGKEL
 {
-    partial class RiwayatPenjualan
+    partial class listPengunjung
     {
         /// <summary>
         /// Required designer variable.
@@ -29,39 +29,39 @@ namespace BENGKEL
         /// </summary>
         private void InitializeComponent()
         {
-            this.lsvRiwayat = new System.Windows.Forms.ListView();
+            this.lsvPengunjung = new System.Windows.Forms.ListView();
             this.txtCari = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // lsvRiwayat
+            // lsvPengunjung
             // 
-            this.lsvRiwayat.HideSelection = false;
-            this.lsvRiwayat.Location = new System.Drawing.Point(7, 90);
-            this.lsvRiwayat.Name = "lsvRiwayat";
-            this.lsvRiwayat.Size = new System.Drawing.Size(797, 344);
-            this.lsvRiwayat.TabIndex = 1;
-            this.lsvRiwayat.UseCompatibleStateImageBehavior = false;
-            this.lsvRiwayat.SelectedIndexChanged += new System.EventHandler(this.lsvRiwayat_SelectedIndexChanged);
-            this.lsvRiwayat.DoubleClick += new System.EventHandler(this.lsvRiwayat_DoubleClick);
+            this.lsvPengunjung.HideSelection = false;
+            this.lsvPengunjung.Location = new System.Drawing.Point(72, 53);
+            this.lsvPengunjung.Name = "lsvPengunjung";
+            this.lsvPengunjung.Size = new System.Drawing.Size(656, 344);
+            this.lsvPengunjung.TabIndex = 2;
+            this.lsvPengunjung.UseCompatibleStateImageBehavior = false;
+            this.lsvPengunjung.SelectedIndexChanged += new System.EventHandler(this.lsvPengunjung_SelectedIndexChanged);
+            this.lsvPengunjung.DoubleClick += new System.EventHandler(this.lsvPengunjung_DoubleClick);
             // 
             // txtCari
             // 
-            this.txtCari.Location = new System.Drawing.Point(477, 50);
+            this.txtCari.Location = new System.Drawing.Point(542, 12);
             this.txtCari.Name = "txtCari";
             this.txtCari.Size = new System.Drawing.Size(186, 20);
-            this.txtCari.TabIndex = 2;
+            this.txtCari.TabIndex = 3;
             this.txtCari.TextChanged += new System.EventHandler(this.txtCari_TextChanged);
             // 
-            // RiwayatPenjualan
+            // listPengunjung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 476);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtCari);
-            this.Controls.Add(this.lsvRiwayat);
-            this.Name = "RiwayatPenjualan";
-            this.Text = "RiwayatPenjualan";
-            this.Load += new System.EventHandler(this.RiwayatPenjualan_Load);
+            this.Controls.Add(this.lsvPengunjung);
+            this.Name = "listPengunjung";
+            this.Text = "listPengunjung";
+            this.Load += new System.EventHandler(this.listPengunjung_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,7 +69,7 @@ namespace BENGKEL
 
         #endregion
 
-        private System.Windows.Forms.ListView lsvRiwayat;
+        private System.Windows.Forms.ListView lsvPengunjung;
         private System.Windows.Forms.TextBox txtCari;
     }
 }

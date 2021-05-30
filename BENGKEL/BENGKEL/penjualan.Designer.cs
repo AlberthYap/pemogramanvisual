@@ -107,6 +107,7 @@ namespace BENGKEL
             this.txt_total.Size = new System.Drawing.Size(134, 20);
             this.txt_total.TabIndex = 50;
             this.txt_total.Text = "0";
+            this.txt_total.TextChanged += new System.EventHandler(this.txt_total_TextChanged);
             // 
             // lstJual
             // 
@@ -321,6 +322,7 @@ namespace BENGKEL
             this.txtPengunjung.Size = new System.Drawing.Size(100, 20);
             this.txtPengunjung.TabIndex = 61;
             this.txtPengunjung.Text = "P00001";
+            this.txtPengunjung.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPengunjung_KeyDown);
             // 
             // label3
             // 

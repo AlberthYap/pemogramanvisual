@@ -76,6 +76,12 @@
     <Compile Include="ListBarang.Designer.cs">
       <DependentUpon>ListBarang.cs</DependentUpon>
     </Compile>
+    <Compile Include="listPengunjung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listPengunjung.Designer.cs">
+      <DependentUpon>listPengunjung.cs</DependentUpon>
+    </Compile>
     <Compile Include="mekanik.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListBarang.resx">
       <DependentUpon>ListBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listPengunjung.resx">
+      <DependentUpon>listPengunjung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mekanik.resx">
       <DependentUpon>mekanik.cs</DependentUpon>

@@ -85,6 +85,7 @@ namespace BENGKEL
                 txtQty.Value = 1;
 
                 txt_total.Text = HitungTotal();
+
             }
         }
 
@@ -142,6 +143,8 @@ namespace BENGKEL
             return total.ToString();
         }
 
+       
+
         private void clear()
         {
             //txtRiwayat.Enabled = false;
@@ -164,119 +167,133 @@ namespace BENGKEL
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
-            if (lstJual.Items.Count != 0)
-            {
-                String sql = "SELECT * " +
-                             "FROM penjualan1 " +
-                             "WHERE kd_jual = '" + txtRiwayat.Text + "'";
-                cmd = new SqlCommand(sql, conn);
-                reader = cmd.ExecuteReader();
-
-                if (reader.HasRows)
+            if (lstJual.Items.Count != 0) 
+            { 
+                if (int.Parse(txtBayar.Text) >= int.Parse(txt_total.Text)) 
                 {
-                    sql = "UPDATE penjualan1 " +
-                           "SET waktu_jual = '" + dateTimePicker1.Value.ToString("MM-dd-yyyy hh:mm:ss") + "'," +
-                           "total_harga = " + txt_total.Text + ", bayar = '" + txtBayar.Text + "', kembali = '" + txtKembali.Text + "', diskon = '" + txtDiskon.Text + "', pengunjung_id = '" + txtPengunjung.Text  + "' WHERE kd_jual = '" + txtRiwayat.Text + "'";
-                    reader.Close();
-                    cmd = new SqlCommand(sql, conn);
-                    cmd.ExecuteNonQuery();
-
-
-
-                    int n = lstJual.Items.Count - 1;
-                    for (int i = 0; i <= n; i++)
-                    {
-                        string a = "SELECT * from penjualan2 where kd_jual = '" + txtRiwayat.Text +
-                                   "' and id_item = '" + lstJual.Items[i].SubItems[0].Text + "' and id_item like 'B%'";
-                        cmd = new SqlCommand(a, conn);
+                        String sql = "SELECT * " +
+                                     "FROM penjualan1 " +
+                                     "WHERE kd_jual = '" + txtRiwayat.Text + "'";
+                        cmd = new SqlCommand(sql, conn);
                         reader = cmd.ExecuteReader();
-                        reader.Read();
 
                         if (reader.HasRows)
                         {
-                            string sql2 = "UPDATE barang SET STOCK += " + reader["qty"].ToString() +
-                                          " WHERE ID_BARANG = '" +
-                                          lstJual.Items[i].SubItems[0].Text + "' ";
-                            //reader.Close();
-                            cmd = new SqlCommand(sql2, conn);
+                            sql = "UPDATE penjualan1 " +
+                                  "SET waktu_jual = '" + dateTimePicker1.Value.ToString("MM-dd-yyyy hh:mm:ss") + "'," +
+                                  "total_harga = " + txt_total.Text + ", bayar = '" + txtBayar.Text + "', kembali = '" +
+                                  txtKembali.Text + "', diskon = '" + txtDiskon.Text + "', pengunjung_id = '" +
+                                  txtPengunjung.Text + "' WHERE kd_jual = '" + txtRiwayat.Text + "'";
+                            reader.Close();
+                            cmd = new SqlCommand(sql, conn);
                             cmd.ExecuteNonQuery();
+
+
+
+                            int n = lstJual.Items.Count - 1;
+                            for (int i = 0; i <= n; i++)
+                            {
+                                string a = "SELECT * from penjualan2 where kd_jual = '" + txtRiwayat.Text +
+                                           "' and id_item = '" + lstJual.Items[i].SubItems[0].Text +
+                                           "' and id_item like 'B%'";
+                                cmd = new SqlCommand(a, conn);
+                                reader = cmd.ExecuteReader();
+                                reader.Read();
+
+                                if (reader.HasRows)
+                                {
+                                    string sql2 = "UPDATE barang SET STOCK += " + reader["qty"].ToString() +
+                                                  " WHERE ID_BARANG = '" +
+                                                  lstJual.Items[i].SubItems[0].Text + "' ";
+                                    reader.Close();
+                                    cmd = new SqlCommand(sql2, conn);
+                                    cmd.ExecuteNonQuery();
+                                }
+                                else
+                                {
+                                    reader.Close();
+                                }
+                            }
+
+                            string sqll = "DELETE FROM penjualan2 WHERE kd_jual ='" + txtRiwayat.Text + "'";
+                            cmd = new SqlCommand(sqll, conn);
+                            cmd.ExecuteNonQuery();
+
+                            for (int i = 0; i <= n; i++)
+                            {
+                                sql = "INSERT INTO penjualan2 " +
+                                      "VALUES('" + txtRiwayat.Text + "','" +
+                                      lstJual.Items[i].SubItems[0].Text + "'," +
+                                      lstJual.Items[i].SubItems[2].Text + "," +
+                                      lstJual.Items[i].SubItems[3].Text + "," +
+                                      lstJual.Items[i].SubItems[4].Text + ")";
+                                cmd = new SqlCommand(sql, conn);
+                                cmd.ExecuteNonQuery();
+
+
+                                if (lstJual.Items[i].SubItems[0].Text.Substring(0, 1) == "B")
+                                {
+                                    string sql1 = "UPDATE barang SET stock -= " + lstJual.Items[i].SubItems[3].Text +
+                                                  " where id_barang = '" + lstJual.Items[i].SubItems[0].Text + "'";
+
+                                    cmd = new SqlCommand(sql1, conn);
+                                    cmd.ExecuteNonQuery();
+                                }
+
+                            }
                         }
                         else
                         {
+                            AutoNumber();
+                            txtRiwayat.Text = KodeAuto;
+                            sql = "INSERT INTO penjualan1 " +
+                                  "VALUES('" + txtRiwayat.Text + "','" +
+                                  dateTimePicker1.Value.ToString("MM-dd-yyyy hh:mm:ss") + "'," + txt_total.Text + "," +
+                                  txtBayar.Text + ",'" + txtKembali.Text + "', 0 , '" + txtPengunjung.Text + "')";
                             reader.Close();
-                        }
-                    }
-
-                    string sqll = "DELETE FROM penjualan2 WHERE kd_jual ='" + txtRiwayat.Text + "'";
-                    cmd = new SqlCommand(sqll, conn);
-                    cmd.ExecuteNonQuery();
-
-                    for (int i = 0; i <= n; i++)
-                    {
-                        sql = "INSERT INTO penjualan2 " +
-                              "VALUES('" + txtRiwayat.Text + "','" +
-                              lstJual.Items[i].SubItems[0].Text + "'," +
-                              lstJual.Items[i].SubItems[2].Text + "," +
-                              lstJual.Items[i].SubItems[3].Text + "," +
-                              lstJual.Items[i].SubItems[4].Text + ")";
-                        cmd = new SqlCommand(sql, conn);
-                        cmd.ExecuteNonQuery();
-
-
-                        if (lstJual.Items[i].SubItems[0].Text.Substring(0, 1) == "B")
-                        {
-                            string sql1 = "UPDATE barang SET stock -= " + lstJual.Items[i].SubItems[3].Text +
-                                          " where id_barang = '" + lstJual.Items[i].SubItems[0].Text + "'";
-
-                            cmd = new SqlCommand(sql1, conn);
+                            cmd = new SqlCommand(sql, conn);
                             cmd.ExecuteNonQuery();
+
+                            int n = lstJual.Items.Count - 1;
+                            for (int i = 0; i <= n; i++)
+                            {
+                                sql = "INSERT INTO penjualan2 " +
+                                      "VALUES('" + txtRiwayat.Text + "','" +
+                                      lstJual.Items[i].SubItems[0].Text + "'," +
+                                      lstJual.Items[i].SubItems[2].Text + "," +
+                                      lstJual.Items[i].SubItems[3].Text + "," +
+                                      lstJual.Items[i].SubItems[4].Text + ")";
+                                cmd = new SqlCommand(sql, conn);
+                                cmd.ExecuteNonQuery();
+
+
+                                if (lstJual.Items[i].SubItems[0].Text.Substring(0, 1) == "B")
+                                {
+                                    string sql1 = "UPDATE barang SET stock -= " + lstJual.Items[i].SubItems[3].Text +
+                                                  " where id_barang = '" + lstJual.Items[i].SubItems[0].Text + "'";
+
+                                    cmd = new SqlCommand(sql1, conn);
+                                    cmd.ExecuteNonQuery();
+                                }
+                            }
                         }
 
-                    }
+                        clear();
+                        conn.Close();
+                        MessageBox.Show("Barang Sudah Disimpan");
                 }
-                else
+                else 
                 {
-                    AutoNumber();
-                    txtRiwayat.Text = KodeAuto;
-                    sql = "INSERT INTO penjualan1 " +
-                        "VALUES('" + txtRiwayat.Text + "','" + dateTimePicker1.Value.ToString("MM-dd-yyyy hh:mm:ss") + "'," + txt_total.Text + "," + txtBayar.Text + ",'" + txtKembali.Text + "', 0 , '"+ txtPengunjung.Text +"')";
-                    reader.Close();
-                    cmd = new SqlCommand(sql, conn);
-                    cmd.ExecuteNonQuery();
-
-                    int n = lstJual.Items.Count - 1;
-                    for (int i = 0; i <= n; i++)
-                    {
-                        sql = "INSERT INTO penjualan2 " +
-                               "VALUES('" + txtRiwayat.Text + "','" +
-                               lstJual.Items[i].SubItems[0].Text + "'," +
-                               lstJual.Items[i].SubItems[2].Text + "," +
-                               lstJual.Items[i].SubItems[3].Text + "," +
-                               lstJual.Items[i].SubItems[4].Text + ")";
-                        cmd = new SqlCommand(sql, conn);
-                        cmd.ExecuteNonQuery();
-
-                        
-                        if (lstJual.Items[i].SubItems[0].Text.Substring(0, 1) == "B")
-                        {
-                            string sql1 = "UPDATE barang SET stock -= " + lstJual.Items[i].SubItems[3].Text +
-                                          " where id_barang = '" + lstJual.Items[i].SubItems[0].Text + "'";
-
-                            cmd = new SqlCommand(sql1, conn);
-                            cmd.ExecuteNonQuery();
-                        }
-                    }
+                        string message = "Jumlah Uang Yang Dimasukkan Kurang";
+                        string title = "Uang Kurang";
+                        MessageBox.Show(message, title);
                 }
-                
-                clear();
-                conn.Close();
-                MessageBox.Show("Barang Sudah Disimpan");
             }
             else
             {
-                string message = "Lengkapi Data Terlebih Dahulu";
-                string title = "Data Tidak Lengkap";
-                MessageBox.Show(message, title);
+                    string message = "Lengkapi Data Terlebih Dahulu";
+                    string title = "Data Tidak Lengkap";
+                    MessageBox.Show(message, title);
             }
         }
 
@@ -392,6 +409,54 @@ namespace BENGKEL
                     }
                 }
                 reader.Close();
+            }
+        }
+
+        private void txt_total_TextChanged(object sender, EventArgs e)
+        {
+            //if (txtPengunjung.Text != "P00001")
+            //{
+            //    if (int.Parse(Program.point) >= 100)
+            //    {
+            //        txtDiskon.Text = Convert.ToString(0.05 * Convert.ToDouble(txt_total.Text));
+            //    }
+            //    else
+            //    {
+            //        txtDiskon.Text = Convert.ToString(0.1 * Convert.ToDouble(txt_total.Text));
+
+            //    }
+            //}
+            //else
+            //{
+            //    txtDiskon.Text = "0";
+            //}
+        }
+
+        private void txtPengunjung_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                listPengunjung frmsearch_trs = new listPengunjung();
+                frmsearch_trs.ShowDialog();
+            }
+
+            txtPengunjung.Text = Program.id_pengunjung;
+
+            if (txtPengunjung.Text != "P00001")
+            {
+                if (int.Parse(Program.point) >= 100)
+                {
+                    txtDiskon.Text = Convert.ToString(0.05 * Convert.ToDouble(txt_total.Text));
+                }
+                else
+                {
+                    txtDiskon.Text = Convert.ToString(0.1 * Convert.ToDouble(txt_total.Text));
+
+                }
+            }
+            else
+            {
+                txtDiskon.Text = "0";
             }
         }
     }

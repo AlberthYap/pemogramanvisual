@@ -44,7 +44,7 @@ namespace BENGKEL
                 lsvRiwayat.Items.Clear();
 
                 ListViewItem item;
-                string sql = "Select * from penjualan1 where kd_jual like '%" + txtCari.Text + "%' or waktu_jual like '%" + txtCari.Text + "%' or total_harga like '%" + txtCari.Text + "%' or bayar like '%" + txtCari.Text + "%' or kembali like '%" + txtCari.Text + "%' or diskon like '%" + txtCari.Text + "%' or pengunjung_id like '%" + txtCari.Text + "%'";
+                string sql = "Select * from penjualan1 where kd_jual like '%" + txtCari.Text + "%' or waktu_jual like '%" + txtCari.Text + "%' or total_harga like '%" + txtCari.Text + "%' or bayar like '%" + txtCari.Text + "%' or kembali like '%" + txtCari.Text + "%' or diskon like '%" + txtCari.Text + "%' or pengunjung_id like '%" + txtCari.Text + "%'or total_akhir like '%" + txtCari.Text + "%'";
                 cmd = new SqlCommand(sql, conn);
 
                 reader = cmd.ExecuteReader();
@@ -59,7 +59,9 @@ namespace BENGKEL
                         item.SubItems.Add(reader["bayar"].ToString());
                         item.SubItems.Add(reader["kembali"].ToString());
                         item.SubItems.Add(reader["diskon"].ToString());
+                        item.SubItems.Add(reader["total_akhir"].ToString());
                         item.SubItems.Add(reader["pengunjung_id"].ToString());
+
 
                         lsvRiwayat.Items.Add(item);
                     }
@@ -86,6 +88,7 @@ namespace BENGKEL
                         item.SubItems.Add(reader["bayar"].ToString());
                         item.SubItems.Add(reader["kembali"].ToString());
                         item.SubItems.Add(reader["diskon"].ToString());
+                        item.SubItems.Add(reader["total_akhir"].ToString());
                         item.SubItems.Add(reader["pengunjung_id"].ToString());
 
                         lsvRiwayat.Items.Add(item);
@@ -107,19 +110,22 @@ namespace BENGKEL
             lsvRiwayat.Columns.Add("KODE JUAL");
             lsvRiwayat.Columns.Add("TANGGAL JUAL");
             lsvRiwayat.Columns.Add("TOTAL HARGA");
-            lsvRiwayat.Columns.Add("DISKON");
             lsvRiwayat.Columns.Add("BAYAR");
             lsvRiwayat.Columns.Add("KEMBALI");
+            lsvRiwayat.Columns.Add("DISKON");
+            lsvRiwayat.Columns.Add("TOTAL AKHIR");
             lsvRiwayat.Columns.Add("KODE USER");
 
 
-            lsvRiwayat.Columns[0].Width = 50;
+            lsvRiwayat.Columns[0].Width = 100;
             lsvRiwayat.Columns[1].Width = 100;
             lsvRiwayat.Columns[2].Width = 100;
             lsvRiwayat.Columns[3].Width = 100;
             lsvRiwayat.Columns[4].Width = 100;
             lsvRiwayat.Columns[5].Width = 100;
             lsvRiwayat.Columns[6].Width = 100;
+            lsvRiwayat.Columns[7].Width = 90;
+
 
 
 
@@ -139,6 +145,7 @@ namespace BENGKEL
                     item.SubItems.Add(reader["bayar"].ToString());
                     item.SubItems.Add(reader["kembali"].ToString());
                     item.SubItems.Add(reader["diskon"].ToString());
+                    item.SubItems.Add(reader["total_akhir"].ToString());
                     item.SubItems.Add(reader["pengunjung_id"].ToString());
 
                     lsvRiwayat.Items.Add(item);
