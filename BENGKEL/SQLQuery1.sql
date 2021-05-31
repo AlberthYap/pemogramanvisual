@@ -106,22 +106,33 @@ insert into PENJUALAN1 values ('280520210002', '05-28-2021', 20000, 20000, 100, 
 insert into PENJUALAN1 values ('280520210243', '05-28-2021', 20000, 20000, 100, 100)
 
 
-delete PENJUALAN1 where kd_jual = '290520210007'
+delete PENJUALAN1 where kd_jual = '290520210004'
+delete PENJUALAN1 where kd_jual = '290520210003'
+delete PENJUALAN1 where kd_jual = '290520210002'
+delete PENJUALAN1 where kd_jual = '300520210001'
 
 
 INSERT INTO penjualan1 VALUES('290520210001','05-29-2021 11:49:43',135000,200000,65000, 0 , 'P00001')
 
 SELECT MAX(kd_jual) AS MAXIMUM, COUNT(kd_jual) AS JUMLAH FROM penjualan1 WHERE kd_jual like '28052021%'
 
-select * from PENJUALAN2
+select * from PEnjualan2
+select * from penjualan1
+select * from barang
 
-select * from jasa
+SELECT * from penjualan2 where kd_jual = '202105300001' and id_item = 'B0003' and id_item like 'B%'
 
-SELECT id_item from PENJUALAN2 where id_item like 'J%'
+select * from pengunjung
 
-SELECT * FROM PENJUALAN2 a 
-inner join barang b 
-on a.id_item = b.id_barang 
-inner join jasa j
-on a.id_item = j.id_jasa
-where a.kd_jual = '290520210001'
+update pengunjung set point = '0' where id_pengunjung = 'p00001'
+
+update penjualan1 set diskon = 375000 where kd_jual = '202105300001'
+update penjualan1 set diskon = 14500 where kd_jual = '202105300003'
+
+
+SELECT * FROM pengunjung WHERE id_pengunjung = 'P00002'
+
+ALTER TABLE penjualan1
+ADD total_akhir decimal;
+
+SELECT * FROM pengunjung WHERE id_pengunjung = 'P00002'

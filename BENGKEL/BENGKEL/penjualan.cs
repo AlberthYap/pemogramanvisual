@@ -55,8 +55,6 @@ namespace BENGKEL
             txt_idItem.Text = Program.id_barang;
             txtItem.Text = Program.nama_barang;
             txtHarga.Text = Program.harga_jual;
-
-
         }
 
         private void btn_Tambah_Click(object sender, EventArgs e)
@@ -85,7 +83,29 @@ namespace BENGKEL
                 txtQty.Value = 1;
 
                 txt_total.Text = HitungTotal();
+                txtAkhir.Text = Convert.ToString(Convert.ToDouble(txt_total.Text) - Convert.ToDouble(txtDiskon.Text));
 
+               diskon();
+            }
+        }
+
+        public void diskon()
+        {
+            if (txtPengunjung.Text == "P00001")
+            {
+                txtDiskon.Text = "0";
+            }
+            else
+            {
+                if (int.Parse(txtPoint.Text) >= 100)
+                {
+                    txtDiskon.Text = Convert.ToString(0.05 * Convert.ToDouble(txt_total.Text));
+                }
+                else if (int.Parse(txtPoint.Text) >= 200)
+                {
+                    txtDiskon.Text = Convert.ToString(0.1 * Convert.ToDouble(txt_total.Text));
+
+                }
             }
         }
 
@@ -169,7 +189,7 @@ namespace BENGKEL
 
             if (lstJual.Items.Count != 0) 
             { 
-                if (int.Parse(txtBayar.Text) >= int.Parse(txt_total.Text)) 
+                if (int.Parse(txtBayar.Text) >= int.Parse(txtAkhir.Text)) 
                 {
                         String sql = "SELECT * " +
                                      "FROM penjualan1 " +
@@ -183,7 +203,8 @@ namespace BENGKEL
                                   "SET waktu_jual = '" + dateTimePicker1.Value.ToString("MM-dd-yyyy hh:mm:ss") + "'," +
                                   "total_harga = " + txt_total.Text + ", bayar = '" + txtBayar.Text + "', kembali = '" +
                                   txtKembali.Text + "', diskon = '" + txtDiskon.Text + "', pengunjung_id = '" +
-                                  txtPengunjung.Text + "' WHERE kd_jual = '" + txtRiwayat.Text + "'";
+                                  txtPengunjung.Text + "' , total_akhir = '" +
+                                  txtAkhir.Text + "' WHERE kd_jual = '" + txtRiwayat.Text + "'";
                             reader.Close();
                             cmd = new SqlCommand(sql, conn);
                             cmd.ExecuteNonQuery();
@@ -249,7 +270,7 @@ namespace BENGKEL
                             sql = "INSERT INTO penjualan1 " +
                                   "VALUES('" + txtRiwayat.Text + "','" +
                                   dateTimePicker1.Value.ToString("MM-dd-yyyy hh:mm:ss") + "'," + txt_total.Text + "," +
-                                  txtBayar.Text + ",'" + txtKembali.Text + "', 0 , '" + txtPengunjung.Text + "')";
+                                  txtBayar.Text + ",'" + txtKembali.Text + "', '" +txtDiskon.Text + "' , '" + txtPengunjung.Text + "', '"+ txtAkhir.Text +"')";
                             reader.Close();
                             cmd = new SqlCommand(sql, conn);
                             cmd.ExecuteNonQuery();
@@ -305,15 +326,7 @@ namespace BENGKEL
 
         private void txtBayar_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtBayar.Text))
-            {
-
-            }
-            else
-            {
-                txtKembali.Text = Convert.ToString(Convert.ToDouble(txtBayar.Text) - Convert.ToDouble(txt_total.Text));
-            }
-
+            kembali();
         }
 
         private void txtBayar_KeyPress(object sender, KeyPressEventArgs e)
@@ -360,11 +373,28 @@ namespace BENGKEL
                     txt_total.Text = reader["total_harga"].ToString();
                     txtPengunjung.Text = reader["pengunjung_id"].ToString();
                     txtDiskon.Text = reader["diskon"].ToString();
+                    txtAkhir.Text = reader["total_akhir"].ToString();
                     txtKembali.Text = reader["kembali"].ToString();
                     txtBayar.Text = reader["bayar"].ToString();
+
+
                 }
                 reader.Close();
 
+
+                sql = "SELECT * " +
+                      "FROM pengunjung " +
+                      "WHERE id_pengunjung = '" + txtPengunjung.Text + "'";
+                cmd = new SqlCommand(sql, conn);
+                reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    txtPoint.Text = reader["point"].ToString();
+                }
+
+                reader.Close();
 
                 sql = "SELECT * FROM PENJUALAN2 a " +
                       "inner join jasa j " +
@@ -409,28 +439,27 @@ namespace BENGKEL
                     }
                 }
                 reader.Close();
+
+               kembali();
             }
         }
 
-        private void txt_total_TextChanged(object sender, EventArgs e)
+        private void kembali()
         {
-            //if (txtPengunjung.Text != "P00001")
-            //{
-            //    if (int.Parse(Program.point) >= 100)
-            //    {
-            //        txtDiskon.Text = Convert.ToString(0.05 * Convert.ToDouble(txt_total.Text));
-            //    }
-            //    else
-            //    {
-            //        txtDiskon.Text = Convert.ToString(0.1 * Convert.ToDouble(txt_total.Text));
+            if (conn.State == ConnectionState.Closed)
+                conn.Open();
 
-            //    }
-            //}
-            //else
-            //{
-            //    txtDiskon.Text = "0";
-            //}
+            if (string.IsNullOrEmpty(txtBayar.Text))
+            {
+
+            }
+            else
+            { 
+                txtKembali.Text =
+                        Convert.ToString(Convert.ToDouble(txtBayar.Text) - Convert.ToDouble(txtAkhir.Text));
+            }
         }
+        
 
         private void txtPengunjung_KeyDown(object sender, KeyEventArgs e)
         {
@@ -442,22 +471,34 @@ namespace BENGKEL
 
             txtPengunjung.Text = Program.id_pengunjung;
 
-            if (txtPengunjung.Text != "P00001")
-            {
-                if (int.Parse(Program.point) >= 100)
-                {
-                    txtDiskon.Text = Convert.ToString(0.05 * Convert.ToDouble(txt_total.Text));
-                }
-                else
-                {
-                    txtDiskon.Text = Convert.ToString(0.1 * Convert.ToDouble(txt_total.Text));
+            if (conn.State == ConnectionState.Closed)
+                conn.Open();
 
-                }
-            }
-            else
+            string sql = "SELECT * " +
+                         "FROM pengunjung " +
+                         "WHERE id_pengunjung = '" + txtPengunjung.Text + "'";
+            cmd = new SqlCommand(sql, conn);
+            reader = cmd.ExecuteReader();
+
+            if (reader.HasRows)
             {
-                txtDiskon.Text = "0";
+                reader.Read();
+                txtPoint.Text = reader["point"].ToString();
             }
+
+            reader.Close();
+
+            diskon();
+        }
+
+        private void txt_total_akhir_TextChanged(object sender, EventArgs e)
+        {
+            kembali();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

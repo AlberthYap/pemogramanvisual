@@ -58,6 +58,9 @@ namespace BENGKEL
             this.txtPengunjung = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtAkhir = new System.Windows.Forms.TextBox();
+            this.txtPoint = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtHarga)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQty)).BeginInit();
             this.SuspendLayout();
@@ -107,7 +110,6 @@ namespace BENGKEL
             this.txt_total.Size = new System.Drawing.Size(134, 20);
             this.txt_total.TabIndex = 50;
             this.txt_total.Text = "0";
-            this.txt_total.TextChanged += new System.EventHandler(this.txt_total_TextChanged);
             // 
             // lstJual
             // 
@@ -316,7 +318,7 @@ namespace BENGKEL
             // 
             // txtPengunjung
             // 
-            this.txtPengunjung.Location = new System.Drawing.Point(15, 94);
+            this.txtPengunjung.Location = new System.Drawing.Point(15, 78);
             this.txtPengunjung.Name = "txtPengunjung";
             this.txtPengunjung.ReadOnly = true;
             this.txtPengunjung.Size = new System.Drawing.Size(100, 20);
@@ -328,7 +330,7 @@ namespace BENGKEL
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 117);
+            this.label3.Location = new System.Drawing.Point(13, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 9);
             this.label3.TabIndex = 62;
@@ -344,11 +346,40 @@ namespace BENGKEL
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtAkhir
+            // 
+            this.txtAkhir.Location = new System.Drawing.Point(52, 389);
+            this.txtAkhir.Name = "txtAkhir";
+            this.txtAkhir.Size = new System.Drawing.Size(140, 20);
+            this.txtAkhir.TabIndex = 64;
+            this.txtAkhir.TextChanged += new System.EventHandler(this.txt_total_akhir_TextChanged);
+            // 
+            // txtPoint
+            // 
+            this.txtPoint.Location = new System.Drawing.Point(15, 117);
+            this.txtPoint.Name = "txtPoint";
+            this.txtPoint.ReadOnly = true;
+            this.txtPoint.Size = new System.Drawing.Size(100, 20);
+            this.txtPoint.TabIndex = 65;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(492, 475);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 66;
+            this.button2.Text = "Print";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // penjualan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 535);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.txtPoint);
+            this.Controls.Add(this.txtAkhir);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPengunjung);
@@ -420,5 +451,8 @@ namespace BENGKEL
         private System.Windows.Forms.TextBox txtPengunjung;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtAkhir;
+        private System.Windows.Forms.TextBox txtPoint;
+        private System.Windows.Forms.Button button2;
     }
 }

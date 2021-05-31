@@ -8,7 +8,6 @@ D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.c
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.csproj.CoreCompileInputs.cache
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.exe
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.pdb
-D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.csprojAssemblyReference.cache
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.pembelian.resources
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.ListBarang.resources
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.RiwayatPembelian.resources
