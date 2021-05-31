@@ -40,11 +40,15 @@ namespace BENGKEL
             this.txtCari = new System.Windows.Forms.TextBox();
             this.lsvJasa = new System.Windows.Forms.ListView();
             this.txtJual = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(182, 175);
+            this.button1.Location = new System.Drawing.Point(171, 123);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 25;
@@ -54,7 +58,7 @@ namespace BENGKEL
             // 
             // btnHapus
             // 
-            this.btnHapus.Location = new System.Drawing.Point(101, 175);
+            this.btnHapus.Location = new System.Drawing.Point(90, 123);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(75, 23);
             this.btnHapus.TabIndex = 24;
@@ -65,7 +69,7 @@ namespace BENGKEL
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 140);
+            this.label4.Location = new System.Drawing.Point(15, 88);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 22;
@@ -74,7 +78,7 @@ namespace BENGKEL
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 108);
+            this.label2.Location = new System.Drawing.Point(15, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 21;
@@ -83,7 +87,7 @@ namespace BENGKEL
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 75);
+            this.label1.Location = new System.Drawing.Point(15, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 20;
@@ -91,7 +95,7 @@ namespace BENGKEL
             // 
             // txt_idJasa
             // 
-            this.txt_idJasa.Location = new System.Drawing.Point(130, 69);
+            this.txt_idJasa.Location = new System.Drawing.Point(119, 17);
             this.txt_idJasa.Name = "txt_idJasa";
             this.txt_idJasa.ReadOnly = true;
             this.txt_idJasa.Size = new System.Drawing.Size(127, 20);
@@ -99,7 +103,7 @@ namespace BENGKEL
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(20, 175);
+            this.btnSimpan.Location = new System.Drawing.Point(9, 123);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(75, 23);
             this.btnSimpan.TabIndex = 18;
@@ -109,14 +113,14 @@ namespace BENGKEL
             // 
             // txtJasa
             // 
-            this.txtJasa.Location = new System.Drawing.Point(130, 105);
+            this.txtJasa.Location = new System.Drawing.Point(119, 53);
             this.txtJasa.Name = "txtJasa";
             this.txtJasa.Size = new System.Drawing.Size(127, 20);
             this.txtJasa.TabIndex = 17;
             // 
             // txtCari
             // 
-            this.txtCari.Location = new System.Drawing.Point(488, 32);
+            this.txtCari.Location = new System.Drawing.Point(483, 17);
             this.txtCari.Name = "txtCari";
             this.txtCari.Size = new System.Drawing.Size(163, 20);
             this.txtCari.TabIndex = 28;
@@ -125,7 +129,7 @@ namespace BENGKEL
             // lsvJasa
             // 
             this.lsvJasa.HideSelection = false;
-            this.lsvJasa.Location = new System.Drawing.Point(281, 58);
+            this.lsvJasa.Location = new System.Drawing.Point(276, 43);
             this.lsvJasa.Name = "lsvJasa";
             this.lsvJasa.Size = new System.Drawing.Size(370, 150);
             this.lsvJasa.TabIndex = 27;
@@ -134,32 +138,64 @@ namespace BENGKEL
             // 
             // txtJual
             // 
-            this.txtJual.Location = new System.Drawing.Point(130, 140);
+            this.txtJual.Location = new System.Drawing.Point(119, 88);
             this.txtJual.Name = "txtJual";
             this.txtJual.Size = new System.Drawing.Size(127, 20);
             this.txtJual.TabIndex = 29;
             this.txtJual.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtJual_KeyPress);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(443, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Cari : ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 24);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Jasa";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtJasa);
+            this.groupBox1.Controls.Add(this.btnSimpan);
+            this.groupBox1.Controls.Add(this.txt_idJasa);
+            this.groupBox1.Controls.Add(this.txtJual);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnHapus);
+            this.groupBox1.Location = new System.Drawing.Point(12, 36);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(258, 157);
+            this.groupBox1.TabIndex = 32;
+            this.groupBox1.TabStop = false;
+            // 
             // jasa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 261);
-            this.Controls.Add(this.txtJual);
+            this.ClientSize = new System.Drawing.Size(654, 206);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCari);
             this.Controls.Add(this.lsvJasa);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnHapus);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_idJasa);
-            this.Controls.Add(this.btnSimpan);
-            this.Controls.Add(this.txtJasa);
             this.Name = "jasa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "jasa";
+            this.Text = "Jasa";
             this.Load += new System.EventHandler(this.jasa_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +213,8 @@ namespace BENGKEL
         private System.Windows.Forms.TextBox txtCari;
         private System.Windows.Forms.ListView lsvJasa;
         private System.Windows.Forms.TextBox txtJual;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

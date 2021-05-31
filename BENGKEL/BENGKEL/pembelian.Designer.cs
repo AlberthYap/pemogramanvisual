@@ -52,6 +52,7 @@ namespace BENGKEL
             this.txtRiwayat = new System.Windows.Forms.TextBox();
             this.errorid = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorbarang = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtQty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHarga)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorid)).BeginInit();
@@ -60,7 +61,7 @@ namespace BENGKEL
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(608, 361);
+            this.btnSimpan.Location = new System.Drawing.Point(610, 402);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(75, 23);
             this.btnSimpan.TabIndex = 11;
@@ -71,7 +72,7 @@ namespace BENGKEL
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(372, 13);
+            this.label1.Location = new System.Drawing.Point(384, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 13;
@@ -80,7 +81,7 @@ namespace BENGKEL
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(480, 335);
+            this.label3.Location = new System.Drawing.Point(482, 376);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 16;
@@ -88,7 +89,7 @@ namespace BENGKEL
             // 
             // txtQty
             // 
-            this.txtQty.Location = new System.Drawing.Point(400, 84);
+            this.txtQty.Location = new System.Drawing.Point(398, 129);
             this.txtQty.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -100,7 +101,7 @@ namespace BENGKEL
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(526, 361);
+            this.btnClear.Location = new System.Drawing.Point(528, 402);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 18;
@@ -110,7 +111,7 @@ namespace BENGKEL
             // 
             // txt_idBarang
             // 
-            this.txt_idBarang.Location = new System.Drawing.Point(12, 84);
+            this.txt_idBarang.Location = new System.Drawing.Point(10, 129);
             this.txt_idBarang.MaxLength = 5;
             this.txt_idBarang.Name = "txt_idBarang";
             this.txt_idBarang.ReadOnly = true;
@@ -121,7 +122,7 @@ namespace BENGKEL
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 65);
+            this.label5.Location = new System.Drawing.Point(10, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 21;
@@ -131,7 +132,7 @@ namespace BENGKEL
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 107);
+            this.label6.Location = new System.Drawing.Point(11, 152);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 9);
             this.label6.TabIndex = 22;
@@ -139,7 +140,7 @@ namespace BENGKEL
             // 
             // txtBarang
             // 
-            this.txtBarang.Location = new System.Drawing.Point(129, 84);
+            this.txtBarang.Location = new System.Drawing.Point(127, 129);
             this.txtBarang.Name = "txtBarang";
             this.txtBarang.ReadOnly = true;
             this.txtBarang.Size = new System.Drawing.Size(142, 20);
@@ -148,7 +149,7 @@ namespace BENGKEL
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(126, 65);
+            this.label7.Location = new System.Drawing.Point(124, 110);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 13);
             this.label7.TabIndex = 24;
@@ -157,7 +158,7 @@ namespace BENGKEL
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(274, 68);
+            this.label8.Location = new System.Drawing.Point(272, 113);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 13);
             this.label8.TabIndex = 25;
@@ -166,7 +167,7 @@ namespace BENGKEL
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(400, 68);
+            this.label9.Location = new System.Drawing.Point(398, 113);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 13);
             this.label9.TabIndex = 26;
@@ -174,7 +175,7 @@ namespace BENGKEL
             // 
             // txtHarga
             // 
-            this.txtHarga.Location = new System.Drawing.Point(277, 84);
+            this.txtHarga.Location = new System.Drawing.Point(275, 129);
             this.txtHarga.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -186,7 +187,7 @@ namespace BENGKEL
             // 
             // btn_Tambah
             // 
-            this.btn_Tambah.Location = new System.Drawing.Point(471, 81);
+            this.btn_Tambah.Location = new System.Drawing.Point(469, 126);
             this.btn_Tambah.Name = "btn_Tambah";
             this.btn_Tambah.Size = new System.Drawing.Size(49, 23);
             this.btn_Tambah.TabIndex = 28;
@@ -197,16 +198,16 @@ namespace BENGKEL
             // lstBeli
             // 
             this.lstBeli.HideSelection = false;
-            this.lstBeli.Location = new System.Drawing.Point(12, 137);
+            this.lstBeli.Location = new System.Drawing.Point(10, 175);
             this.lstBeli.Name = "lstBeli";
-            this.lstBeli.Size = new System.Drawing.Size(671, 189);
+            this.lstBeli.Size = new System.Drawing.Size(675, 189);
             this.lstBeli.TabIndex = 29;
             this.lstBeli.UseCompatibleStateImageBehavior = false;
             this.lstBeli.DoubleClick += new System.EventHandler(this.lstBeli_DoubleClick);
             // 
             // txt_total
             // 
-            this.txt_total.Location = new System.Drawing.Point(549, 332);
+            this.txt_total.Location = new System.Drawing.Point(551, 373);
             this.txt_total.Name = "txt_total";
             this.txt_total.ReadOnly = true;
             this.txt_total.Size = new System.Drawing.Size(134, 20);
@@ -215,7 +216,7 @@ namespace BENGKEL
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(473, 9);
+            this.dateTimePicker1.Location = new System.Drawing.Point(485, 55);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 31;
@@ -223,7 +224,7 @@ namespace BENGKEL
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 13);
+            this.label2.Location = new System.Drawing.Point(7, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 32;
@@ -233,7 +234,7 @@ namespace BENGKEL
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(119, 31);
+            this.label4.Location = new System.Drawing.Point(111, 77);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(173, 9);
             this.label4.TabIndex = 33;
@@ -241,7 +242,7 @@ namespace BENGKEL
             // 
             // txtRiwayat
             // 
-            this.txtRiwayat.Location = new System.Drawing.Point(121, 9);
+            this.txtRiwayat.Location = new System.Drawing.Point(113, 55);
             this.txtRiwayat.Name = "txtRiwayat";
             this.txtRiwayat.ReadOnly = true;
             this.txtRiwayat.Size = new System.Drawing.Size(192, 20);
@@ -258,12 +259,23 @@ namespace BENGKEL
             // 
             this.errorbarang.ContainerControl = this;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(246, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(181, 24);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "Pembelian Barang";
+            // 
             // pembelian
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(689, 391);
+            this.ClientSize = new System.Drawing.Size(692, 434);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.txtRiwayat);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -322,5 +334,6 @@ namespace BENGKEL
         private System.Windows.Forms.TextBox txtRiwayat;
         private System.Windows.Forms.ErrorProvider errorid;
         private System.Windows.Forms.ErrorProvider errorbarang;
+        private System.Windows.Forms.Label label10;
     }
 }

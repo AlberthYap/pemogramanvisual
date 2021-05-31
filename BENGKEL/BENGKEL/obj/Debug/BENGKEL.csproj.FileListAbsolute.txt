@@ -18,7 +18,6 @@ D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.p
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.RiwayatPenjualan.resources
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.ItemAll.resources
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.listPengunjung.resources
-D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.csprojAssemblyReference.cache
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\bin\Debug\CrystalDecisions.ReportSource.dll
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\bin\Debug\CrystalDecisions.Shared.dll
@@ -40,3 +39,5 @@ D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\bin\Debug\AxShockwa
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\bin\Debug\CrystalDecisions.Windows.Forms.dll
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\bin\Debug\ShockwaveFlashObjects.dll
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.formReportBarang.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.csprojAssemblyReference.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.fakturJual.resources

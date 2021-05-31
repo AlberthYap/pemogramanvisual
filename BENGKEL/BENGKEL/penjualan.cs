@@ -67,25 +67,93 @@ namespace BENGKEL
             }
             else
             {
-                ListViewItem item;
-                item = new ListViewItem();
-                item.Text = txt_idItem.Text;
-                item.SubItems.Add(txtItem.Text);
-                item.SubItems.Add(txtHarga.Text);
-                item.SubItems.Add(txtQty.Text);
-                double totall = Convert.ToDouble(txtHarga.Text) * Convert.ToDouble(txtQty.Text);
-                item.SubItems.Add(totall.ToString());
-                lstJual.Items.Add(item);
+                if (conn.State == ConnectionState.Closed)
+                    conn.Open();
 
-                txt_idItem.Clear();
-                txtItem.Clear();
-                txtHarga.Value = 0;
-                txtQty.Value = 1;
 
-                txt_total.Text = HitungTotal();
-                txtAkhir.Text = Convert.ToString(Convert.ToDouble(txt_total.Text) - Convert.ToDouble(txtDiskon.Text));
+                if (txt_idItem.Text.Substring(0, 1) == "B")
+                {
+                    string sql = "SELECT * " +
+                             "FROM barang " +
+                             "WHERE id_barang = '" + txt_idItem.Text + "'";
+                    cmd = new SqlCommand(sql, conn);
+                    reader = cmd.ExecuteReader();
 
-               diskon();
+                    if (reader.HasRows)
+                    {
+                        reader.Read();
+
+                        if (Convert.ToDouble(reader["stock"].ToString()) == 0)
+                        {
+                            string message = "Stock Kosong";
+                            string title = "Stock Kosong";
+                            MessageBox.Show(message, title);
+                        }
+                        else if (Convert.ToDouble(reader["stock"].ToString()) < Convert.ToDouble(txtQty.Text))
+                        {
+                            string message = "Stock Tidak Mencukupi";
+                            string title = "Stock Tidak Mencukupi";
+                            MessageBox.Show(message, title);
+                        }
+                        else
+                        {
+                            ListViewItem item;
+                            item = new ListViewItem();
+                            item.Text = txt_idItem.Text;
+                            item.SubItems.Add(txtItem.Text);
+                            item.SubItems.Add(txtHarga.Text);
+                            item.SubItems.Add(txtQty.Text);
+                            double totall = Convert.ToDouble(txtHarga.Text) * Convert.ToDouble(txtQty.Text);
+                            item.SubItems.Add(totall.ToString());
+                            lstJual.Items.Add(item);
+
+                            txt_idItem.Clear();
+                            txtItem.Clear();
+                            txtHarga.Value = 0;
+                            txtQty.Value = 1;
+
+                            txt_total.Text = HitungTotal();
+                            txtAkhir.Text = Convert.ToString(Convert.ToDouble(txt_total.Text) - Convert.ToDouble(txtDiskon.Text));
+
+                            diskon();
+                        }
+                    }
+
+                    reader.Close();
+                } 
+                else if (txt_idItem.Text.Substring(0, 1) == "J")
+                {
+                    if (Convert.ToDouble(txtQty.Text) > 1)
+                    {
+                        string message = "QTY Kelebihan";
+                        string title = "QTY Kelebihan";
+                        MessageBox.Show(message, title);
+                    }
+                    else
+                    {
+                        ListViewItem item;
+                        item = new ListViewItem();
+                        item.Text = txt_idItem.Text;
+                        item.SubItems.Add(txtItem.Text);
+                        item.SubItems.Add(txtHarga.Text);
+                        item.SubItems.Add(txtQty.Text);
+                        double totall = Convert.ToDouble(txtHarga.Text) * Convert.ToDouble(txtQty.Text);
+                        item.SubItems.Add(totall.ToString());
+                        lstJual.Items.Add(item);
+
+                        txt_idItem.Clear();
+                        txtItem.Clear();
+                        txtHarga.Value = 0;
+                        txtQty.Value = 1;
+
+                        txt_total.Text = HitungTotal();
+                        txtAkhir.Text = Convert.ToString(Convert.ToDouble(txt_total.Text) - Convert.ToDouble(txtDiskon.Text));
+
+                        diskon();
+                    }
+                }
+                
+
             }
         }
 
@@ -163,7 +231,55 @@ namespace BENGKEL
             return total.ToString();
         }
 
-       
+        private void DapatPoint()
+        {
+            if (conn.State == ConnectionState.Closed)
+                conn.Open();
+
+            if ((txtPengunjung.Text != "P00001") && (Convert.ToDouble(txtAkhir.Text) >= 100000) )
+            {
+                string sqll = "update pengunjung set point += 10 where id_pengunjung = '"+ txtPengunjung.Text +"'";
+                cmd = new SqlCommand(sqll, conn);
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        private void KurangPoint()
+        {
+            if (conn.State == ConnectionState.Closed)
+                conn.Open();
+
+            reader.Close();
+
+            string sql = "SELECT * " +
+                         "FROM penjualan1 " +
+                         "WHERE kd_jual = '" + txtRiwayat.Text + "'";
+            cmd = new SqlCommand(sql, conn);
+            reader = cmd.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                reader.Read();
+                string a = reader["pengunjung_id"].ToString();
+
+                if (reader["pengunjung_id"].ToString() != "P00001" && reader["pengunjung_id"].ToString() == txtPengunjung.Text)
+                {
+                    string sqll = "update pengunjung set point -= 10 where id_pengunjung = '" + txtPengunjung.Text + "'";
+                    cmd = new SqlCommand(sqll, conn);
+                    cmd.ExecuteNonQuery();
+                } 
+                else if (reader["pengunjung_id"].ToString() != "P00001" && reader["pengunjung_id"].ToString() != txtPengunjung.Text)
+                {
+                    reader.Close();
+                    string sqll1 = "update pengunjung set point -= 10 where id_pengunjung = '" + a + "'";
+                    cmd = new SqlCommand(sqll1, conn);
+                    cmd.ExecuteNonQuery();
+                }
+                reader.Close();
+
+            }
+        }
+
 
         private void clear()
         {
@@ -178,8 +294,10 @@ namespace BENGKEL
             txtDiskon.Text = "0";
             txtKembali.Clear();
             txtBayar.Clear();
+            txtAkhir.Clear();
             lstJual.Items.Clear();
             txtPengunjung.Text = "P00001";
+            txtPoint.Text = "0";
         }
 
         private void btnSimpan_Click(object sender, EventArgs e)
@@ -187,7 +305,7 @@ namespace BENGKEL
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
-            if (lstJual.Items.Count != 0) 
+            if (lstJual.Items.Count != 0 && txtBayar.Text != "") 
             { 
                 if (int.Parse(txtBayar.Text) >= int.Parse(txtAkhir.Text)) 
                 {
@@ -199,6 +317,8 @@ namespace BENGKEL
 
                         if (reader.HasRows)
                         {
+                            KurangPoint();
+                            DapatPoint();
                             sql = "UPDATE penjualan1 " +
                                   "SET waktu_jual = '" + dateTimePicker1.Value.ToString("MM-dd-yyyy hh:mm:ss") + "'," +
                                   "total_harga = " + txt_total.Text + ", bayar = '" + txtBayar.Text + "', kembali = '" +
@@ -266,6 +386,7 @@ namespace BENGKEL
                         else
                         {
                             AutoNumber();
+                            DapatPoint();
                             txtRiwayat.Text = KodeAuto;
                             sql = "INSERT INTO penjualan1 " +
                                   "VALUES('" + txtRiwayat.Text + "','" +

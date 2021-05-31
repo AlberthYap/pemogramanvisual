@@ -277,5 +277,10 @@ namespace BENGKEL
                 MessageBox.Show("Hanya Bisa Angka");
             }
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

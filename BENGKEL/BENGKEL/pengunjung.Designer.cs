@@ -46,12 +46,16 @@ namespace BENGKEL
             this.txtCari = new System.Windows.Forms.TextBox();
             this.txtNomor = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lsvPengunjung
             // 
             this.lsvPengunjung.HideSelection = false;
-            this.lsvPengunjung.Location = new System.Drawing.Point(12, 45);
+            this.lsvPengunjung.Location = new System.Drawing.Point(12, 32);
             this.lsvPengunjung.Name = "lsvPengunjung";
             this.lsvPengunjung.Size = new System.Drawing.Size(726, 257);
             this.lsvPengunjung.TabIndex = 37;
@@ -61,7 +65,7 @@ namespace BENGKEL
             // 
             // btnClean
             // 
-            this.btnClean.Location = new System.Drawing.Point(940, 279);
+            this.btnClean.Location = new System.Drawing.Point(198, 245);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(75, 23);
             this.btnClean.TabIndex = 35;
@@ -71,7 +75,7 @@ namespace BENGKEL
             // 
             // btnHapus
             // 
-            this.btnHapus.Location = new System.Drawing.Point(859, 279);
+            this.btnHapus.Location = new System.Drawing.Point(117, 245);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(75, 23);
             this.btnHapus.TabIndex = 34;
@@ -82,7 +86,7 @@ namespace BENGKEL
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(754, 119);
+            this.label4.Location = new System.Drawing.Point(12, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 33;
@@ -91,7 +95,7 @@ namespace BENGKEL
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(754, 87);
+            this.label2.Location = new System.Drawing.Point(12, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 32;
@@ -100,7 +104,7 @@ namespace BENGKEL
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(754, 54);
+            this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 31;
@@ -108,7 +112,7 @@ namespace BENGKEL
             // 
             // txt_idPengunjung
             // 
-            this.txt_idPengunjung.Location = new System.Drawing.Point(858, 48);
+            this.txt_idPengunjung.Location = new System.Drawing.Point(116, 14);
             this.txt_idPengunjung.Name = "txt_idPengunjung";
             this.txt_idPengunjung.ReadOnly = true;
             this.txt_idPengunjung.Size = new System.Drawing.Size(172, 20);
@@ -116,7 +120,7 @@ namespace BENGKEL
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(778, 279);
+            this.btnSimpan.Location = new System.Drawing.Point(36, 245);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(75, 23);
             this.btnSimpan.TabIndex = 29;
@@ -126,7 +130,7 @@ namespace BENGKEL
             // 
             // txtPengunjung
             // 
-            this.txtPengunjung.Location = new System.Drawing.Point(858, 84);
+            this.txtPengunjung.Location = new System.Drawing.Point(116, 50);
             this.txtPengunjung.Name = "txtPengunjung";
             this.txtPengunjung.Size = new System.Drawing.Size(172, 20);
             this.txtPengunjung.TabIndex = 28;
@@ -134,7 +138,7 @@ namespace BENGKEL
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(754, 211);
+            this.label3.Location = new System.Drawing.Point(12, 177);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 38;
@@ -143,7 +147,7 @@ namespace BENGKEL
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(754, 180);
+            this.label5.Location = new System.Drawing.Point(12, 146);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 13);
             this.label5.TabIndex = 39;
@@ -151,7 +155,7 @@ namespace BENGKEL
             // 
             // txtNoHp
             // 
-            this.txtNoHp.Location = new System.Drawing.Point(858, 173);
+            this.txtNoHp.Location = new System.Drawing.Point(116, 139);
             this.txtNoHp.Name = "txtNoHp";
             this.txtNoHp.Size = new System.Drawing.Size(172, 20);
             this.txtNoHp.TabIndex = 41;
@@ -159,14 +163,14 @@ namespace BENGKEL
             // 
             // txtMotor
             // 
-            this.txtMotor.Location = new System.Drawing.Point(858, 208);
+            this.txtMotor.Location = new System.Drawing.Point(116, 174);
             this.txtMotor.Name = "txtMotor";
             this.txtMotor.Size = new System.Drawing.Size(172, 20);
             this.txtMotor.TabIndex = 42;
             // 
             // txtAlamat
             // 
-            this.txtAlamat.Location = new System.Drawing.Point(858, 119);
+            this.txtAlamat.Location = new System.Drawing.Point(116, 85);
             this.txtAlamat.Name = "txtAlamat";
             this.txtAlamat.Size = new System.Drawing.Size(172, 39);
             this.txtAlamat.TabIndex = 43;
@@ -174,15 +178,15 @@ namespace BENGKEL
             // 
             // txtCari
             // 
-            this.txtCari.Location = new System.Drawing.Point(13, 13);
+            this.txtCari.Location = new System.Drawing.Point(581, 6);
             this.txtCari.Name = "txtCari";
-            this.txtCari.Size = new System.Drawing.Size(448, 20);
+            this.txtCari.Size = new System.Drawing.Size(157, 20);
             this.txtCari.TabIndex = 44;
             this.txtCari.TextChanged += new System.EventHandler(this.txtCari_TextChanged);
             // 
             // txtNomor
             // 
-            this.txtNomor.Location = new System.Drawing.Point(858, 243);
+            this.txtNomor.Location = new System.Drawing.Point(116, 209);
             this.txtNomor.Name = "txtNomor";
             this.txtNomor.Size = new System.Drawing.Size(172, 20);
             this.txtNomor.TabIndex = 46;
@@ -190,38 +194,71 @@ namespace BENGKEL
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(754, 246);
+            this.label6.Location = new System.Drawing.Point(12, 212);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 13);
             this.label6.TabIndex = 45;
             this.label6.Text = "Nomor Kendaraan";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(8, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(324, 24);
+            this.label7.TabIndex = 47;
+            this.label7.Text = "Pendaftaran Member Pengunjung";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label8.Location = new System.Drawing.Point(541, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 13);
+            this.label8.TabIndex = 48;
+            this.label8.Text = "Cari : ";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtNomor);
+            this.groupBox1.Controls.Add(this.txtPengunjung);
+            this.groupBox1.Controls.Add(this.btnSimpan);
+            this.groupBox1.Controls.Add(this.txt_idPengunjung);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtAlamat);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtMotor);
+            this.groupBox1.Controls.Add(this.btnHapus);
+            this.groupBox1.Controls.Add(this.txtNoHp);
+            this.groupBox1.Controls.Add(this.btnClean);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Location = new System.Drawing.Point(745, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(299, 283);
+            this.groupBox1.TabIndex = 49;
+            this.groupBox1.TabStop = false;
+            // 
             // pengunjung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1045, 312);
-            this.Controls.Add(this.txtNomor);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(1045, 294);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCari);
-            this.Controls.Add(this.txtAlamat);
-            this.Controls.Add(this.txtMotor);
-            this.Controls.Add(this.txtNoHp);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.lsvPengunjung);
-            this.Controls.Add(this.btnClean);
-            this.Controls.Add(this.btnHapus);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_idPengunjung);
-            this.Controls.Add(this.btnSimpan);
-            this.Controls.Add(this.txtPengunjung);
             this.Name = "pengunjung";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "pengunjung";
+            this.Text = "Pendaftaran Member Pengunjung";
             this.Load += new System.EventHandler(this.pengunjung_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,5 +283,8 @@ namespace BENGKEL
         private System.Windows.Forms.TextBox txtCari;
         private System.Windows.Forms.TextBox txtNomor;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
