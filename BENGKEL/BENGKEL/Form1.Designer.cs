@@ -37,13 +37,16 @@ namespace BENGKEL
             this.mekanikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pengunjungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.penjualanToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.barangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.penjualanToolStripMenuItem});
+            this.penjualanToolStripMenuItem,
+            this.laporanToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -105,6 +108,21 @@ namespace BENGKEL
             this.penjualanToolStripMenuItem1.Text = "Penjualan";
             this.penjualanToolStripMenuItem1.Click += new System.EventHandler(this.penjualanToolStripMenuItem1_Click);
             // 
+            // laporanToolStripMenuItem
+            // 
+            this.laporanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.barangToolStripMenuItem});
+            this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
+            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.laporanToolStripMenuItem.Text = "Laporan";
+            // 
+            // barangToolStripMenuItem
+            // 
+            this.barangToolStripMenuItem.Name = "barangToolStripMenuItem";
+            this.barangToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.barangToolStripMenuItem.Text = "Barang";
+            this.barangToolStripMenuItem.Click += new System.EventHandler(this.barangToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,6 +150,8 @@ namespace BENGKEL
         private System.Windows.Forms.ToolStripMenuItem mekanikToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pengunjungToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem penjualanToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem laporanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem barangToolStripMenuItem;
     }
 }
 

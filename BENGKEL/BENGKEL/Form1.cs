@@ -52,5 +52,11 @@ namespace BENGKEL
             Form Penjualan = new penjualan();
             Penjualan.Show();
         }
+
+        private void barangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formReportBarang = new formReportBarang();
+            formReportBarang.Show();
+        }
     }
 }
