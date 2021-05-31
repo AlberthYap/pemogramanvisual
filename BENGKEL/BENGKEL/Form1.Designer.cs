@@ -39,6 +39,7 @@ namespace BENGKEL
             this.penjualanToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cetakToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,7 +112,8 @@ namespace BENGKEL
             // laporanToolStripMenuItem
             // 
             this.laporanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.barangToolStripMenuItem});
+            this.barangToolStripMenuItem,
+            this.cetakToolStripMenuItem});
             this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
             this.laporanToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.laporanToolStripMenuItem.Text = "Laporan";
@@ -122,6 +124,13 @@ namespace BENGKEL
             this.barangToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.barangToolStripMenuItem.Text = "Barang";
             this.barangToolStripMenuItem.Click += new System.EventHandler(this.barangToolStripMenuItem_Click);
+            // 
+            // cetakToolStripMenuItem
+            // 
+            this.cetakToolStripMenuItem.Name = "cetakToolStripMenuItem";
+            this.cetakToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cetakToolStripMenuItem.Text = "Cetak";
+            this.cetakToolStripMenuItem.Click += new System.EventHandler(this.cetakToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -152,6 +161,7 @@ namespace BENGKEL
         private System.Windows.Forms.ToolStripMenuItem penjualanToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem laporanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem barangToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cetakToolStripMenuItem;
     }
 }
 

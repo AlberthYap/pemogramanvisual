@@ -59,17 +59,11 @@
     <Compile Include="barang.Designer.cs">
       <DependentUpon>barang.cs</DependentUpon>
     </Compile>
-    <Compile Include="faktur.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>faktur.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="fakturJual.cs">
+    <Compile Include="CetakFaktur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fakturJual.Designer.cs">
-      <DependentUpon>fakturJual.cs</DependentUpon>
+    <Compile Include="CetakFaktur.Designer.cs">
+      <DependentUpon>CetakFaktur.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -95,8 +89,6 @@
     <Compile Include="jasa.Designer.cs">
       <DependentUpon>jasa.cs</DependentUpon>
     </Compile>
-    <Compile Include="jual.cs" />
-    <Compile Include="JualDetail.cs" />
     <Compile Include="ListBarang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +125,12 @@
     <Compile Include="penjualan.Designer.cs">
       <DependentUpon>penjualan.cs</DependentUpon>
     </Compile>
+    <Compile Include="PilihCetak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PilihCetak.Designer.cs">
+      <DependentUpon>PilihCetak.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportBarang.cs">
@@ -156,12 +154,8 @@
     <EmbeddedResource Include="barang.resx">
       <DependentUpon>barang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="faktur.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>faktur.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fakturJual.resx">
-      <DependentUpon>fakturJual.cs</DependentUpon>
+    <EmbeddedResource Include="CetakFaktur.resx">
+      <DependentUpon>CetakFaktur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -192,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="penjualan.resx">
       <DependentUpon>penjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PilihCetak.resx">
+      <DependentUpon>PilihCetak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

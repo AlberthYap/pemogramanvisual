@@ -58,5 +58,11 @@ namespace BENGKEL
             Form formReportBarang = new formReportBarang();
             formReportBarang.Show();
         }
+
+        private void cetakToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form pilihCetak = new PilihCetak();
+            pilihCetak.Show();
+        }
     }
 }

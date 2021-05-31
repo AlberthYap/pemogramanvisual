@@ -40,4 +40,5 @@ D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\bin\Debug\CrystalDe
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\bin\Debug\ShockwaveFlashObjects.dll
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.formReportBarang.resources
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.csprojAssemblyReference.cache
-D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.fakturJual.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.CetakFaktur.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.PilihCetak.resources

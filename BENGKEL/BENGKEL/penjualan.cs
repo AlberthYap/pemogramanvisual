@@ -262,20 +262,21 @@ namespace BENGKEL
                 reader.Read();
                 string a = reader["pengunjung_id"].ToString();
 
-                if (reader["pengunjung_id"].ToString() != "P00001" && reader["pengunjung_id"].ToString() == txtPengunjung.Text)
+                if (reader["pengunjung_id"].ToString() != "P00001" && (reader["pengunjung_id"].ToString() == txtPengunjung.Text && Convert.ToDouble(reader["total_akhir"].ToString()) >= 100000  ))
                 {
+                    reader.Close();
+
                     string sqll = "update pengunjung set point -= 10 where id_pengunjung = '" + txtPengunjung.Text + "'";
                     cmd = new SqlCommand(sqll, conn);
                     cmd.ExecuteNonQuery();
                 } 
-                else if (reader["pengunjung_id"].ToString() != "P00001" && reader["pengunjung_id"].ToString() != txtPengunjung.Text)
+                else if (reader["pengunjung_id"].ToString() != "P00001" && (reader["pengunjung_id"].ToString() != txtPengunjung.Text && Convert.ToDouble(reader["total_akhir"].ToString()) >= 100000))
                 {
                     reader.Close();
                     string sqll1 = "update pengunjung set point -= 10 where id_pengunjung = '" + a + "'";
                     cmd = new SqlCommand(sqll1, conn);
                     cmd.ExecuteNonQuery();
                 }
-                reader.Close();
 
             }
         }
@@ -309,9 +310,10 @@ namespace BENGKEL
             { 
                 if (int.Parse(txtBayar.Text) >= int.Parse(txtAkhir.Text)) 
                 {
-                        String sql = "SELECT * " +
-                                     "FROM penjualan1 " +
-                                     "WHERE kd_jual = '" + txtRiwayat.Text + "'";
+
+                    String sql = "SELECT * " +
+                                 "FROM penjualan1 " +
+                                 "WHERE kd_jual = '" + txtRiwayat.Text + "'";
                         cmd = new SqlCommand(sql, conn);
                         reader = cmd.ExecuteReader();
 
@@ -420,9 +422,13 @@ namespace BENGKEL
                             }
                         }
 
+                        Program.id_faktur = txtRiwayat.Text;
                         clear();
                         conn.Close();
                         MessageBox.Show("Barang Sudah Disimpan");
+
+                        Form Cetak= new CetakFaktur();
+                        Cetak.Show();
                 }
                 else 
                 {
