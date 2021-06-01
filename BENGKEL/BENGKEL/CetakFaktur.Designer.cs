@@ -63,6 +63,8 @@ namespace BENGKEL
             this.txt_totalAkhir = new System.Windows.Forms.Label();
             this.txt_kembali = new System.Windows.Forms.Label();
             this.txt_bayar = new System.Windows.Forms.Label();
+            this.txtMekanik = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt
@@ -158,7 +160,7 @@ namespace BENGKEL
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(499, 39);
+            this.label19.Location = new System.Drawing.Point(504, 39);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(68, 13);
             this.label19.TabIndex = 84;
@@ -194,7 +196,7 @@ namespace BENGKEL
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(504, 83);
+            this.label23.Location = new System.Drawing.Point(504, 85);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(64, 13);
             this.label23.TabIndex = 89;
@@ -299,7 +301,7 @@ namespace BENGKEL
             // txt_tipeMotor
             // 
             this.txt_tipeMotor.AutoSize = true;
-            this.txt_tipeMotor.Location = new System.Drawing.Point(587, 83);
+            this.txt_tipeMotor.Location = new System.Drawing.Point(587, 85);
             this.txt_tipeMotor.Name = "txt_tipeMotor";
             this.txt_tipeMotor.Size = new System.Drawing.Size(64, 13);
             this.txt_tipeMotor.TabIndex = 98;
@@ -394,12 +396,32 @@ namespace BENGKEL
             this.txt_bayar.TabIndex = 107;
             this.txt_bayar.Text = "Bayar : ";
             // 
+            // txtMekanik
+            // 
+            this.txtMekanik.AutoSize = true;
+            this.txtMekanik.Location = new System.Drawing.Point(587, 64);
+            this.txtMekanik.Name = "txtMekanik";
+            this.txtMekanik.Size = new System.Drawing.Size(64, 13);
+            this.txtMekanik.TabIndex = 109;
+            this.txtMekanik.Text = "Tipe Motor :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(514, 63);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.TabIndex = 108;
+            this.label4.Text = "Mekanik : ";
+            // 
             // CetakFaktur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(786, 473);
+            this.Controls.Add(this.txtMekanik);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_bayar);
             this.Controls.Add(this.txt_kembali);
             this.Controls.Add(this.txt_totalAkhir);
@@ -431,6 +453,7 @@ namespace BENGKEL
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lsvFaktur);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CetakFaktur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CetakFaktur ";
@@ -474,5 +497,7 @@ namespace BENGKEL
         private System.Windows.Forms.Label txt_totalAkhir;
         private System.Windows.Forms.Label txt_kembali;
         private System.Windows.Forms.Label txt_bayar;
+        private System.Windows.Forms.Label txtMekanik;
+        private System.Windows.Forms.Label label4;
     }
 }

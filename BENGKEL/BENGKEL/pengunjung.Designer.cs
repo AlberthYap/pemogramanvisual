@@ -29,6 +29,7 @@ namespace BENGKEL
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pengunjung));
             this.lsvPengunjung = new System.Windows.Forms.ListView();
             this.btnClean = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
@@ -203,6 +204,7 @@ namespace BENGKEL
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(8, 6);
             this.label7.Name = "label7";
@@ -213,6 +215,7 @@ namespace BENGKEL
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.label8.Location = new System.Drawing.Point(541, 9);
             this.label8.Name = "label8";
@@ -222,6 +225,7 @@ namespace BENGKEL
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.txtNomor);
             this.groupBox1.Controls.Add(this.txtPengunjung);
             this.groupBox1.Controls.Add(this.btnSimpan);
@@ -247,12 +251,14 @@ namespace BENGKEL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::BENGKEL.Properties.Resources.abstract_blue_white_wallpaper__1_;
             this.ClientSize = new System.Drawing.Size(1045, 294);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCari);
             this.Controls.Add(this.lsvPengunjung);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "pengunjung";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pendaftaran Member Pengunjung";

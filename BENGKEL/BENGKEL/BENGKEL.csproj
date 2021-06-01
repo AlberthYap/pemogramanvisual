@@ -71,6 +71,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formlistBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlistBarang.Designer.cs">
+      <DependentUpon>formlistBarang.cs</DependentUpon>
+    </Compile>
     <Compile Include="formReportBarang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,18 @@
     </Compile>
     <Compile Include="ListBarang.Designer.cs">
       <DependentUpon>ListBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listJual.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>listJual.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListMekanik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListMekanik.Designer.cs">
+      <DependentUpon>ListMekanik.cs</DependentUpon>
     </Compile>
     <Compile Include="listPengunjung.cs">
       <SubType>Form</SubType>
@@ -160,6 +178,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formlistBarang.resx">
+      <DependentUpon>formlistBarang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formReportBarang.resx">
       <DependentUpon>formReportBarang.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +192,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListBarang.resx">
       <DependentUpon>ListBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listJual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>listJual.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListMekanik.resx">
+      <DependentUpon>ListMekanik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listPengunjung.resx">
       <DependentUpon>listPengunjung.cs</DependentUpon>
@@ -198,6 +226,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ReportBarang.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -224,6 +253,51 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-blue-white-wallpaper %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dangerous-goods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technical-support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mechanic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1080p-white-background-6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1080p-white-background-6 %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

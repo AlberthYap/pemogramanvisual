@@ -29,6 +29,7 @@ namespace BENGKEL
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(barang));
             this.btnSimpan = new System.Windows.Forms.Button();
             this.txt_idBarang = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -149,6 +150,7 @@ namespace BENGKEL
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(501, 23);
             this.label3.Name = "label3";
@@ -159,6 +161,7 @@ namespace BENGKEL
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 9);
             this.label5.Name = "label5";
@@ -168,6 +171,7 @@ namespace BENGKEL
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.txt_idBarang);
             this.groupBox1.Controls.Add(this.btnSimpan);
             this.groupBox1.Controls.Add(this.label1);
@@ -189,6 +193,8 @@ namespace BENGKEL
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
+            this.BackgroundImage = global::BENGKEL.Properties.Resources.abstract_blue_white_wallpaper__1_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(694, 209);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
@@ -196,6 +202,7 @@ namespace BENGKEL
             this.Controls.Add(this.txtCari);
             this.Controls.Add(this.lstBarang);
             this.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "barang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

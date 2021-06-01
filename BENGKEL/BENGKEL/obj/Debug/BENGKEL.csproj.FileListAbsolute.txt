@@ -42,3 +42,5 @@ D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.f
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.csprojAssemblyReference.cache
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.CetakFaktur.resources
 D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.PilihCetak.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.ListMekanik.resources
+D:\Materi\Semester VI\Pemograman Visual\Code\BENGKEL\BENGKEL\obj\Debug\BENGKEL.formlistBarang.resources

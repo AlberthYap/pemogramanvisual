@@ -8,7 +8,7 @@ namespace BENGKEL
 {
     static class Program
     {
-        public static string id_barang, nama_barang, id_beli,  harga_jual, id_jual, id_pengunjung, point, id_faktur;
+        public static string id_barang, nama_barang, id_beli,  harga_jual, id_jual, id_pengunjung, point, id_faktur, id_mekanik;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

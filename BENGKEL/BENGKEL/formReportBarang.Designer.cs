@@ -29,6 +29,7 @@ namespace BENGKEL
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formReportBarang));
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.ReportBarang1 = new BENGKEL.ReportBarang();
             this.SuspendLayout();
@@ -51,6 +52,7 @@ namespace BENGKEL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(966, 505);
             this.Controls.Add(this.crystalReportViewer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formReportBarang";
             this.Text = "formReportBarang";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

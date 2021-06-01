@@ -105,3 +105,13 @@ D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFor
 D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.CoreCompileInputs.cache
 D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
 D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\Report1.rdlc
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\BouncyCastle.Crypto.dll
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\itextsharp.dll
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\itextsharp.xml
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\RdlCompile.cache
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\RdlCompile.compiled
+D:\Materi\Semester VI\Pemograman Visual\Code\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.CopyComplete

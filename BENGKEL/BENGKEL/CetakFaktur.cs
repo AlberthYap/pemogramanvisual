@@ -98,7 +98,7 @@ namespace BENGKEL
                 conn.Open();
 
             string sql =
-                "select * from penjualan1 inner join pengunjung on PENJUALAN1.pengunjung_id = pengunjung.id_pengunjung where kd_jual = '" +
+                "select *, mekanik.nama_mekanik from penjualan1 inner join pengunjung on PENJUALAN1.pengunjung_id = pengunjung.id_pengunjung left join mekanik on penjualan1.id_mekanik = mekanik.id_mekanik where kd_jual = '" +
                 kodeFaktur + "'";
             cmd = new SqlCommand(sql, conn);
             reader = cmd.ExecuteReader();
@@ -120,7 +120,7 @@ namespace BENGKEL
                 txt_diskon.Text = reader["diskon"].ToString();
                 txt_totalAkhir.Text = reader["total_akhir"].ToString();
                 txt_bayar.Text = reader["bayar"].ToString();
-                txt_kembali.Text = reader["kembali"].ToString();
+                txtMekanik.Text = reader["nama_mekanik"].ToString();
 
                 reader.Close();
             }

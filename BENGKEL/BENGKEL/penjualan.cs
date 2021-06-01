@@ -299,6 +299,7 @@ namespace BENGKEL
             lstJual.Items.Clear();
             txtPengunjung.Text = "P00001";
             txtPoint.Text = "0";
+            txtMekanik.Clear();
         }
 
         private void btnSimpan_Click(object sender, EventArgs e)
@@ -306,11 +307,10 @@ namespace BENGKEL
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
-            if (lstJual.Items.Count != 0 && txtBayar.Text != "") 
+            if (lstJual.Items.Count != 0 && txtBayar.Text != "" && txtMekanik.Text != "") 
             { 
                 if (int.Parse(txtBayar.Text) >= int.Parse(txtAkhir.Text)) 
                 {
-
                     String sql = "SELECT * " +
                                  "FROM penjualan1 " +
                                  "WHERE kd_jual = '" + txtRiwayat.Text + "'";
@@ -326,7 +326,7 @@ namespace BENGKEL
                                   "total_harga = " + txt_total.Text + ", bayar = '" + txtBayar.Text + "', kembali = '" +
                                   txtKembali.Text + "', diskon = '" + txtDiskon.Text + "', pengunjung_id = '" +
                                   txtPengunjung.Text + "' , total_akhir = '" +
-                                  txtAkhir.Text + "' WHERE kd_jual = '" + txtRiwayat.Text + "'";
+                                  txtAkhir.Text + "', id_mekanik = '" + txtMekanik.Text +"' WHERE kd_jual = '" + txtRiwayat.Text + "'";
                             reader.Close();
                             cmd = new SqlCommand(sql, conn);
                             cmd.ExecuteNonQuery();
@@ -393,7 +393,7 @@ namespace BENGKEL
                             sql = "INSERT INTO penjualan1 " +
                                   "VALUES('" + txtRiwayat.Text + "','" +
                                   dateTimePicker1.Value.ToString("MM-dd-yyyy hh:mm:ss") + "'," + txt_total.Text + "," +
-                                  txtBayar.Text + ",'" + txtKembali.Text + "', '" +txtDiskon.Text + "' , '" + txtPengunjung.Text + "', '"+ txtAkhir.Text +"')";
+                                  txtBayar.Text + ",'" + txtKembali.Text + "', '" +txtDiskon.Text + "' , '" + txtPengunjung.Text + "', '"+ txtAkhir.Text +"' ,'" + txtMekanik.Text +"')";
                             reader.Close();
                             cmd = new SqlCommand(sql, conn);
                             cmd.ExecuteNonQuery();
@@ -503,6 +503,8 @@ namespace BENGKEL
                     txtAkhir.Text = reader["total_akhir"].ToString();
                     txtKembali.Text = reader["kembali"].ToString();
                     txtBayar.Text = reader["bayar"].ToString();
+                    txtMekanik.Text = reader["id_mekanik"].ToString();
+
 
 
                 }
@@ -626,6 +628,17 @@ namespace BENGKEL
         private void button2_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                ListMekanik frmsearch_trs = new ListMekanik();
+                frmsearch_trs.ShowDialog();
+            }
+
+            txtMekanik.Text = Program.id_mekanik;
         }
     }
 }

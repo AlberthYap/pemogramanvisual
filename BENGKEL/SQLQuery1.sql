@@ -130,9 +130,11 @@ update penjualan1 set diskon = 375000 where kd_jual = '202105300001'
 update penjualan1 set diskon = 14500 where kd_jual = '202105300003'
 
 
+select *, mekanik.nama_mekanik from penjualan1 inner join pengunjung on PENJUALAN1.pengunjung_id = pengunjung.id_pengunjung left join mekanik on penjualan1.id_mekanik = mekanik.id_mekanik where kd_jual = '202105300003'
+
 SELECT * FROM pengunjung WHERE id_pengunjung = 'P00002'
 
 ALTER TABLE penjualan1
-ADD total_akhir decimal;
+ADD id_mekanik int foreign key references mekanik(id_mekanik);
 
 SELECT * FROM pengunjung WHERE id_pengunjung = 'P00002'
